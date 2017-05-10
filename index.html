@@ -8,7 +8,7 @@
 </head>
 
 <body ng-app="TodoApp">
-    <nav class="navbar navbar-default" ng-controller="NavCtrl">
+    <nav class="navbar navbar-inverse" ng-controller="NavCtrl">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -30,8 +30,32 @@
     </nav>
 
     <div ng-controller="ItemCtrl">
-    	{{dog}}
-    	{{24+5}}
+    	<div class="row">
+    		<div class="col-xs-6 col-xs-offset-3">
+    			<button class="col-xs-6 btn btn-success" ng-click="newItem()">New Item</button>
+    			<button class="col-xs-6 btn btn-warning" ng-click="allItems()">All Items</button>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-xs-8 col-xs-offset-2">
+    			<h1>NG Todo</h1>
+    			<div ng-show="!showListView">
+    				<h3>New Todo</h3>
+    			</div>
+    			<div ng-show="showListView">
+    				<h3>Todo List</h3>
+    			</div>
+    		</div>
+    	</div>
+
+
+
+
+
+
+
+
+
     </div>
     
 
