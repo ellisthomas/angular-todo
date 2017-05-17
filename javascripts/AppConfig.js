@@ -12,7 +12,7 @@ app.config(function($routeProvider) {
             templateUrl: "partials/item-new.html",
             controller: "ItemNewCtrl"
         })
-        .when("item/view/:id", {
+        .when("/item/view/:id", {
             templateUrl: "partials/item-view.html",
             controller: "ItemViewCtrl"
         })
