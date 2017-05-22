@@ -4,6 +4,7 @@ app.controller("ItemListCtrl", function($scope, ItemFactory) {
     let getItems = () => {
         ItemFactory.getItemList().then((itemz) => {
             $scope.items = itemz;
+            console.log("itemz", itemz);
         }).catch((error) => {
             console.log("get Error", error);
         });
